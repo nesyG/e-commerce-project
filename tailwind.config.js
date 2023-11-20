@@ -8,7 +8,8 @@ export default {
       backgroundColor: theme => ({
        ...theme('colors'),
        'top-bar': '#2F2F2F',
-       'cart-btn':'#008421'  
+       'cart-btn':'#008421',
+       'shipping': '#F5F5F5',
       }),
       textColor: theme => theme('colors'),
       textColor: {
@@ -19,6 +20,7 @@ export default {
        },
        fontSize: {
         'main-heading': ['72px', '64px'],
+        'summary':['40px', '40px']
       }
     }
   },

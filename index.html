@@ -12,20 +12,31 @@
   <header class="shadow-md">
     <div class="bg-top-bar">
       <div class="container mx-auto flex justify-between items-center  h-12 text-top-bar-text">
-        <navbar class="flex-grow">
+        <navbar class="flex-grow font-top-bar-1">
           <ul class="flex">
-            <li><span>Contact our Customer Service</span>></li>
-            <li><span>ABOUT US</span></li>
-            <li><span>CONTACT US</span></li>
-            <li><span>WHERE TO BUY</span></li>
+            <li class="flex w-47 text-sm leading-6">
+              <span>Contact our Customer Service</span>
+              <img class="px-2 mt-0.5 h-4" src="./svg/phone-icon.svg" alt="phone icon">
+              <span class="font-bold">(800) 333-3567</span>
+            </li>
+            <div class="flex justify-between items-center text-sm font-bold leading-4">
+              <img class="h-1.5 px-2" src="./svg/oval.svg">
+              <li><span>ABOUT US</span></li>
+              <img class="h-1.5 px-2" src="./svg/oval.svg">
+              <li><span>CONTACT US</span></li>
+              <img class="h-1.5 px-2" src="./svg/oval.svg">
+              <li><span>WHERE TO BUY</span></li>
+            </div>       
           </ul>
         </navbar>
-        <div class="flex-grow">
+        <div class="flex-grow font-top-bar-1 text-sm leading-6">
           <p>Promo message area - shipping advantages, special offers...</p>
         </div>
-        <div>
-          <span>Icon</span>
-          <button>SIGN IN</button>
+        <div class="font-main text-lg">       
+          <button class="flex">
+            <img class="px-2" src="./svg/sign-in.svg" alt="sign in icon">
+            <span>SIGN IN</span>
+          </button>
         </div>
       </div>
     </div>
@@ -35,25 +46,31 @@
         <div>
           <a href="#"><img src="./svg/inchoo-logo.svg" alt="Inchoo logo"></a>
         </div>
-        <div class="flex justify-center flex-grow text-center">
-          <div>
-            <a href="#">
-              <span class="inline-block text-5xl">/</span>
-              <span class="inline-block">SOFT TOP</br>PRODUCTS</span>
+        <div class="flex justify-center flex-grow font-main text-product-nav text-start ">
+          <div class="hover:text-hover-orange">
+            <a href="#" class="flex">
+              <img src="./svg/line.svg">
+              <span class="inline-block ml-2 mt-1">SOFT TOP</br>PRODUCTS</span>
             </a>
           </div>
           <div class="pl-16">
-            <a href="#">
-              <span class="inline-block text-5xl">/</span>
-              <span class="inline-block">JEEP</br>ACCESSORIES</span>
+            <a href="#" class="flex hover:text-hover-orange">
+              <img src="./svg/line.svg">
+              <span class="inline-block ml-2 mt-1">JEEP</br>ACCESSORIES</span>
             </a>
           </div>
         </div>
-        <div class="flex-grow text-right">
-          <input class="border-2 border-solid w-80 h-12 pl-2" type="text" placeholder="Search entire store here...">
+        <div id="search-container" class="flex-grow text-right">
+          <img id="search-icon" src="./svg/search.svg" alt="search icon">  
+          <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6" type="text" placeholder="Search entire store here...">              
         </div>
-        <div class="ml-8">
-          <button class="w-36 h-12 bg-cart-btn">My Cart</button>
+        <div class="ml-8 font-main">       
+          <button class="flex justify-between items-center w-36 h-12 px-6 py-4 text-white bg-cart-btn">
+            <img src="./svg/shopping-cart.svg">
+            <span>My Cart</span>
+            <img src="./svg/shape.svg">
+          </button>
+        <span id="cart-quantity" class="w-6 h-6 rounded-full bg-shipping text-center font-top-bar-1 text-cart-quant text-xs">2</span>
         </div>
       </navbar>
     </div>
@@ -132,7 +149,7 @@
         </section>
       </div>
 
-      <div class="ml-12">
+      <div class="ml-12 mb-12">
         <section id="shopping-cart-summary">
           <h2 class="text-summary pb-4">SUMMARY</h2>
           <form class="">
@@ -158,45 +175,52 @@
             <br>
 
             <div class="flex flex-col h-12 w-72">
-            <label for="state">State:</label>
-            <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state" placeholder="Enter State">
-          </div>
-
-            <br>
-
-            <div class="flex flex-col h-12 w-72">
-            <label for="zip">Zip Code:</label>
-            <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip" placeholder="Enter Zip Code">
+              <label for="state">State:</label>
+              <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state"
+                placeholder="Enter State">
             </div>
 
             <br>
 
             <div class="flex flex-col h-12 w-72">
-            <label>Flat Rate</label>
-            <label>
-              <input type="radio" name="shipping" value="flat_rate"> Fixed ($5.00)
-            </label>
-          </div>
+              <label for="zip">Zip Code:</label>
+              <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip"
+                placeholder="Enter Zip Code">
+            </div>
 
             <br>
 
-            <span>Subtotal Price: $100.00</span><br>
-            <span>Shipping Price: $10.00</span><br>
-            <span>Order Total: $110.00</span><br>
+            <div class="flex flex-col h-12 w-72">
+              <label>Flat Rate</label>
+              <label>
+                <input type="radio" name="shipping" value="flat_rate"> Fixed ($5.00)
+              </label>
+            </div>
 
             <br>
-
-            <button type="submit">Place Order</button>
+            <div class="px-4 py-2 mx-auto bg-shipping">
+              <div class="flex flex-col">
+                <span>Subtotal Price: $100.00</span>
+                <span>Shipping Price: $10.00</span>
+              </div>
+              <div>
+                <span>Order Total: $110.00</span>
+              </div>
+              <div class="flex flex-col w-full">
+                <button type="submit" class="w-full h-12 bg-cart-btn">Place Order</button>
+                <a class="w-full">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+              </div>
+            </div>
           </form>
-          <a>CHECKOUT WITH MULTIPLE ADDRESSES</a>
         </section>
       </div>
     </div>
   </main>
 
   <footer class="h-40 bg-top-bar text-top-bar-text bottom-0">
+    <div class="container mx-auto px-60 pt-12">
     <navbar>
-      <ul class="flex">
+      <ul class="flex justify-between">
         <li>ABOUT US</li>
         <li>CONTACT US</li>
         <li>SEARCH TERMS</li>
@@ -204,10 +228,11 @@
         <li>INSTALLATION VIDEOS</li>
       </ul>
     </navbar>
-    <div class="flex">
-      <span>Contact our Customer Service</span>
-      <span>(800) 333-3567</span>
+    <div class="flex justify-center px-20 text-center mt-6">
+        <span>Contact our Customer Service</span>
+        <span>(800) 333-3567</span>        
     </div>
+  </div>
   </footer>
   <script type="module" src="/main.js"></script>
 </body>

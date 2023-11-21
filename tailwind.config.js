@@ -14,13 +14,20 @@ export default {
       textColor: theme => theme('colors'),
       textColor: {
         'top-bar-text': '#F5F5F5',
+        'hover-orange': '#E0872C',
+        'cart-quant': '#008421',
       },
       fontFamily: {
-     'main':['Bebas Neue']
+     'main':['Bebas Neue'],
+     'top-bar-1':['Titillium Web']
        },
        fontSize: {
         'main-heading': ['72px', '64px'],
-        'summary':['40px', '40px']
+        'summary':['40px', '40px'],
+        'product-nav':['24px', '24px']
+      },
+      width: {
+        '5/12': '47%',
       }
     }
   },

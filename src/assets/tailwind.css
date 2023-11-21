@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,4 +21,23 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+#search-icon {
+    position: absolute;
+    top: 15%;
+    transform: translateY(50%);
+    right: 15px; /* Adjust the left distance as needed */
+    cursor: pointer;
+}
+
+#search-container {
+    position: relative;
+}
+
+#cart-quantity {
+    top: 6.5%;
+  position: absolute;
+  right: 7.5%;
+  padding-top: .2rem;
 }

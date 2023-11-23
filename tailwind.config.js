@@ -24,10 +24,15 @@ export default {
        fontSize: {
         'main-heading': ['72px', '64px'],
         'summary':['40px', '40px'],
-        'product-nav':['24px', '24px']
+        'product-nav':['24px', '24px'],
+        'extra-small':['13px', '16px']
       },
       width: {
         '5/12': '47%',
+        '18.375':'18.375rem',
+      },
+      height: {
+        'footer-nav': '21px',
       }
     }
   },

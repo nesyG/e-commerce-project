@@ -26,13 +26,13 @@
               <li><span>CONTACT US</span></li>
               <img class="h-1.5 px-2" src="./svg/oval.svg">
               <li><span>WHERE TO BUY</span></li>
-            </div>       
+            </div>
           </ul>
         </navbar>
         <div class="flex-grow font-top-bar-1 text-sm leading-6">
           <p>Promo message area - shipping advantages, special offers...</p>
         </div>
-        <div class="font-main text-lg">       
+        <div class="font-main text-lg">
           <button class="flex">
             <img class="px-2" src="./svg/sign-in.svg" alt="sign in icon">
             <span>SIGN IN</span>
@@ -61,16 +61,18 @@
           </div>
         </div>
         <div id="search-container" class="flex-grow text-right">
-          <img id="search-icon" src="./svg/search.svg" alt="search icon">  
-          <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6" type="text" placeholder="Search entire store here...">              
+          <img id="search-icon" src="./svg/search.svg" alt="search icon">
+          <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6" type="text"
+            placeholder="Search entire store here...">
         </div>
-        <div class="ml-8 font-main">       
+        <div class="ml-8 font-main">
           <button class="flex justify-between items-center w-36 h-12 px-6 py-4 text-white bg-cart-btn">
             <img src="./svg/shopping-cart.svg">
             <span>My Cart</span>
             <img src="./svg/shape.svg">
           </button>
-        <span id="cart-quantity" class="w-6 h-6 rounded-full bg-shipping text-center font-top-bar-1 text-cart-quant text-xs">2</span>
+          <span id="cart-quantity"
+            class="w-6 h-6 rounded-full bg-shipping text-center font-top-bar-1 text-cart-quant text-xs">2</span>
         </div>
       </navbar>
     </div>
@@ -82,20 +84,23 @@
     </section>
     <div class="container flex">
       <div class="flex-grow">
+        <div class="pb-4 flex justify-between font-top-bar-1 font-bold text-sm">
+          <span>Item</span>
+          <span class="flex-grow text-end pr-10">Qty</span>
+          <span class="pr-16">SUBTOTAL</span>
+        </div>
         <section id="shopping-cart-body">
-          <div class="pb-4 flex justify-between">
-            <span>Item</span>
-            <span>Qty</span>
-            <span>SUBTOTAL</span>
-          </div>
           <div class="flex justify-between mt-6">
             <img src="./svg/cart-item.svg" alt="Cart item image">
-            <div>
-              <p class="w-96">FLIP TOPtm COMPLETE REPLACAMENT SOFT TOP,JEEP 1976-1995 CJ-7/WRANGLER,NO DOORS
+            <div class="flex flex-col content-between">
+              <p class="w-72 text-lg leading-snug flex-grow">FLIP TOPtm COMPLETE REPLACAMENT SOFT TOP,JEEP 1976-1995
+                CJ-7/WRANGLER,NO DOORS
                 INCLUDED,CLEAR SIDE AND
                 REAR WINDOWS</p>
-              <span>Color:</span>
-              <span>Black Denim</span>
+              <div class="font-top-bar-1 text-sm leading-6 pb-2.5">
+                <span class="font-bold">Color:</span>
+                <span> Black Denim</span>
+              </div>
             </div>
             <div class="w-12 h-12 border-2 border-solid text-center pt-2">
               <span>1</span>
@@ -111,19 +116,17 @@
         </section>
 
         <section id="shopping-cart-body">
-          <div>
-            <span>Item</span>
-            <span>Qty</span>
-            <span>SUBTOTAL</span>
-          </div>
           <div class="flex justify-between mt-6">
             <img src="./svg/cart-item.svg" alt="Cart item image">
-            <div>
-              <p class="w-96">FLIP TOPtm COMPLETE REPLACAMENT SOFT TOP,JEEP 1976-1995 CJ-7/WRANGLER,NO DOORS
+            <div class="flex flex-col content-between">
+              <p class="w-72 text-lg leading-snug flex-grow">FLIP TOPtm COMPLETE REPLACAMENT SOFT TOP,JEEP 1976-1995
+                CJ-7/WRANGLER,NO DOORS
                 INCLUDED,CLEAR SIDE AND
                 REAR WINDOWS</p>
-              <span>Color:</span>
-              <span>Black Denim</span>
+              <div class="font-top-bar-1 text-sm leading-6 pb-2.5">
+                <span class="font-bold">Color:</span>
+                <span> Black Denim</span>
+              </div>
             </div>
             <div class="w-12 h-12 border-2 border-solid text-center pt-2">
               <span>1</span>
@@ -138,13 +141,13 @@
           </div>
         </section>
 
-        <section id="shopping-cart-update" class="mt-16 mb-16">
-          <div>
-            <input>
-            <button>APPLY</button>
+        <section id="shopping-cart-update" class="flex justify-between mt-16 mb-16">
+          <div class="flex border-2 border-solid h-12 w-18.375">
+            <input class="w-75 h-full font-top-bar-1 pl-4" type="text" placeholder="Enter Discount Code">
+            <button class="w-full h-full border-l-2 border-l-solid">APPLY</button>
           </div>
-          <div>
-            <button>UPDATE SHOPPING CART</button>
+          <div class="h-12 w-18.375 text-center bg-top-bar">
+            <button type="button" class="w-full h-full font-main text-top-bar-text text-lg">UPDATE SHOPPING CART</button>
           </div>
         </section>
       </div>
@@ -152,14 +155,15 @@
       <div class="ml-12 mb-12">
         <section id="shopping-cart-summary">
           <h2 class="text-summary pb-4">SUMMARY</h2>
-          <form class="">
-            <div class="mb-4">
-              <button class="w-72 flex justify-between px-6 py-4 bg-shipping">
-                <span>ESTIMATE SHIPPING AND TAX</span>
-                <img src="./svg/close-dropdown.svg" alt="button for estimate shipping">
+          <form id="orderForm">
+            <div id="shippingHeading" class="m-px">
+              <button id="toggleShipping" class="w-72 flex justify-between px-6 py-4 bg-shipping text-black">
+                <span id="shippingCaption">ESTIMATE SHIPPING AND TAX</span>
+                <img id="dropdownIcon" src="./svg/open-dropdown.svg" alt="button for estimate shipping">
               </button>
             </div>
-            <div class="flex flex-col h-12 w-72">
+            <div id="shippingDiv" class="container-closed">
+            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
               <label for="country">Country</label>
               <div class="dropdown">
                 <input type="text" id="country" class="w-72 px-2 py-2 border-2 border-solid" name="country"
@@ -171,44 +175,46 @@
                 </div>
               </div>
             </div>
-
             <br>
-
-            <div class="flex flex-col h-12 w-72">
+            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
               <label for="state">State:</label>
-              <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state"
-                placeholder="Enter State">
+              <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state">
             </div>
-
             <br>
-
-            <div class="flex flex-col h-12 w-72">
+            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
               <label for="zip">Zip Code:</label>
-              <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip"
-                placeholder="Enter Zip Code">
+              <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip">
             </div>
-
             <br>
-
-            <div class="flex flex-col h-12 w-72">
+            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6 mt-6 mb-8">
               <label>Flat Rate</label>
-              <label>
-                <input type="radio" name="shipping" value="flat_rate"> Fixed ($5.00)
+              <label class="pl-4">
+                <input type="radio" name="shipping" value="flat_rate"><span class="pl-4">Fixed</span><span
+                  class="text-xs"> ($5.00)</span>
               </label>
             </div>
-
-            <br>
-            <div class="px-4 py-2 mx-auto bg-shipping">
-              <div class="flex flex-col">
-                <span>Subtotal Price: $100.00</span>
-                <span>Shipping Price: $10.00</span>
+          </div>
+            <div>
+              <div class="flex flex-col px-4 py-2 mx-auto bg-shipping">
+                <div class="flex justify-between pb-2">
+                  <span class="font-main text-lg leading-6">Subtotal</span>
+                  <span class="font-top-bar-1 text-sm leading-6">$100.00</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-main text-lg leading-6">Shipping</span>
+                  <span class="font-top-bar-1 text-sm leading-6">$100.00</span>
+                </div>
               </div>
-              <div>
-                <span>Order Total: $110.00</span>
-              </div>
-              <div class="flex flex-col w-full">
-                <button type="submit" class="w-full h-12 bg-cart-btn">Place Order</button>
-                <a class="w-full">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+              <div class="bg-shipping m-px px-4 py-2 mx-auto">
+                <div class="flex justify-between pt-2">
+                  <span class="text-2xl leading-6">Order Total</span>
+                  <span class="font-top-bar-1 font-bold">$110.00</span>
+                </div>
+                <div class="flex flex-col w-full pt-8">
+                  <button type="submit" class="w-full h-12 bg-cart-btn font-main text-2xl leading-6 text-white">PROCEED
+                    TO CHECKOUT</button>
+                  <a class="w-full pt-6 pb-4 font-top-bar-1 text-extra-small leading-4 font-bold text-center">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                </div>
               </div>
             </div>
           </form>
@@ -219,22 +225,27 @@
 
   <footer class="h-40 bg-top-bar text-top-bar-text bottom-0">
     <div class="container mx-auto px-60 pt-12">
-    <navbar>
-      <ul class="flex justify-between">
-        <li>ABOUT US</li>
-        <li>CONTACT US</li>
-        <li>SEARCH TERMS</li>
-        <li>PRIVACY AND COOKIE POLICY</li>
-        <li>INSTALLATION VIDEOS</li>
-      </ul>
-    </navbar>
-    <div class="flex justify-center px-20 text-center mt-6">
+      <navbar>
+        <ul class="flex justify-between items-center h-footer-nav font-top-bar-1 text-extra-small font-bold">
+          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">ABOUT US</a></li>
+          <div class="text-3xl leading-6 font-extralight">/</div>
+          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">CONTACT US</a></li>
+          <div class="text-3xl leading-6 font-extralight">/</div>
+          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">SEARCH TERMS</a></li>
+          <div class="text-3xl leading-6 font-extralight">/</div>
+          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">PRIVACY AND COOKIE POLICY</a></li>
+          <div class="text-3xl leading-6 font-extralight">/</div>
+          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">INSTALLATION VIDEOS</a></li>
+        </ul>
+      </navbar>
+      <div class="flex justify-center px-20 text-center mt-6 w-47 text-sm leading-6">
         <span>Contact our Customer Service</span>
-        <span>(800) 333-3567</span>        
+        <img class="px-2 mt-0.5 h-4" src="./svg/phone-icon.svg" alt="phone icon">
+        <span class="font-bold">(800) 333-3567</span>
+      </div>
     </div>
-  </div>
   </footer>
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 
 </html>

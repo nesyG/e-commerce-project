@@ -27,7 +27,7 @@
     position: absolute;
     top: 15%;
     transform: translateY(50%);
-    right: 15px; /* Adjust the left distance as needed */
+    right: 15px;
     cursor: pointer;
 }
 
@@ -40,4 +40,8 @@
   position: absolute;
   right: 7.5%;
   padding-top: .2rem;
+}
+
+.container-closed {
+    display:none;
 }

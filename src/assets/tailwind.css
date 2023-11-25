@@ -31,17 +31,22 @@
     cursor: pointer;
 }
 
-#search-container {
+#search-container, #cart-container {
     position: relative;
 }
 
 #cart-quantity {
-    top: 6.5%;
+  top: -10px;
   position: absolute;
-  right: 7.5%;
   padding-top: .2rem;
+  right:0;
 }
 
 .container-closed {
     display:none;
 }
+
+#productNav div:hover,  #productNav div:hover svg {
+    color:#E0872C;
+    stroke: #E0872C;
+  }

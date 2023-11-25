@@ -5,13 +5,11 @@ export default {
   ],
   theme: {
     extend: {  
-      backgroundColor: theme => ({
-       ...theme('colors'),
+      backgroundColor: {
        'top-bar': '#2F2F2F',
        'cart-btn':'#008421',
        'shipping': '#F5F5F5',
-      }),
-      textColor: theme => theme('colors'),
+      },
       textColor: {
         'top-bar-text': '#F5F5F5',
         'hover-orange': '#E0872C',
@@ -25,7 +23,11 @@ export default {
         'main-heading': ['72px', '64px'],
         'summary':['40px', '40px'],
         'product-nav':['24px', '24px'],
-        'extra-small':['13px', '16px']
+        'extra-small':['13px', '16px'],
+        'mobile':['10px', '16px'],
+        '1.375': ['1.375rem', '1.5rem'],
+        '11px':['11px', '16px'],
+        '1rem': ['16px', '16px']
       },
       width: {
         '5/12': '47%',
@@ -33,7 +35,11 @@ export default {
       },
       height: {
         'footer-nav': '21px',
-      }
+        'header-mob': '4.5rem'
+      },
+      borderColor: {
+        'custom': '#2F2F2F'
+       }
     }
   },
   plugins: [],

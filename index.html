@@ -9,30 +9,33 @@
 </head>
 
 <body>
-  <header class="shadow-md">
+  <header class="lg:shadow-md">
     <div class="bg-top-bar">
-      <div class="container mx-auto flex justify-between items-center  h-12 text-top-bar-text">
+      <div class="container mx-auto flex justify-between items-center h-8 lg:h-12 text-top-bar-text">
         <navbar class="flex-grow font-top-bar-1">
           <ul class="flex">
             <li class="flex w-47 text-sm leading-6">
-              <span>Contact our Customer Service</span>
-              <img class="px-2 mt-0.5 h-4" src="./svg/phone-icon.svg" alt="phone icon">
-              <span class="font-bold">(800) 333-3567</span>
+              <span class="hidden lg:block">Contact our Customer Service</span>
+              <img class="pl-2 lg:px-2 mt-0.5 h-4" src="./svg/phone-icon.svg" alt="phone icon">
+              <span class="hidden lg:block font-bold">(800) 333-3567</span>
             </li>
-            <div class="flex justify-between items-center text-sm font-bold leading-4">
+            <div class="flex justify-between items-center text-mobile lg:text-sm font-bold lg:leading-4">
               <img class="h-1.5 px-2" src="./svg/oval.svg">
-              <li><span>ABOUT US</span></li>
+              <li><span class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">ABOUT
+                  US</span></li>
               <img class="h-1.5 px-2" src="./svg/oval.svg">
-              <li><span>CONTACT US</span></li>
+              <li><span class="inline-block h-3.5  border-b border-solid border-b-gray-100 border-opacity-25">CONTACT
+                  US</span></li>
               <img class="h-1.5 px-2" src="./svg/oval.svg">
-              <li><span>WHERE TO BUY</span></li>
+              <li><span class="inline-block h-3.5  border-b border-solid border-b-gray-100 border-opacity-25">WHERE TO
+                  BUY</span></li>
             </div>
           </ul>
         </navbar>
-        <div class="flex-grow font-top-bar-1 text-sm leading-6">
+        <div class="hidden lg:block flex-grow font-top-bar-1 text-sm leading-6">
           <p>Promo message area - shipping advantages, special offers...</p>
         </div>
-        <div class="font-main text-lg">
+        <div class="font-main text-lg mr-4 lg:mr-0">
           <button class="flex">
             <img class="px-2" src="./svg/sign-in.svg" alt="sign in icon">
             <span>SIGN IN</span>
@@ -41,179 +44,227 @@
       </div>
     </div>
 
-    <div class="container flex justify-between mx-auto h-24">
+    <div class="container h-header-mob lg:flex lg:justify-between lg:mx-auto lg:h-24">
       <navbar class="flex items-center h-full w-full">
-        <div>
-          <a href="#"><img src="./svg/inchoo-logo.svg" alt="Inchoo logo"></a>
+        <div class="ml-4 lg:hidden">
+          <button class="w-10 h-10 rounded-full bg-shipping"><img class="mx-auto" src="./svg/mobile-menu.svg"></button>
         </div>
-        <div class="flex justify-center flex-grow font-main text-product-nav text-start ">
-          <div class="hover:text-hover-orange">
+        <div class="flex-grow pl-8 lg:pl-0 lg:flex-grow-0">
+          <a href="#"><img class="w-24 h-8 lg:w-auto lg:h-auto" src="./svg/inchoo-logo.svg" alt="Inchoo logo"></a>
+        </div>
+        <div id="productNav" class="hidden lg:flex flex justify-center flex-grow font-main text-product-nav">
+          <div class="group">
             <a href="#" class="flex">
-              <img src="./svg/line.svg">
+              <svg width="23" height="52" viewBox="0 0 23 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">
+                <path d="M1.3006 50.0343L20.7153 1.96576" stroke-width="2" stroke-linecap="square"/>
+                </svg>
               <span class="inline-block ml-2 mt-1">SOFT TOP</br>PRODUCTS</span>
             </a>
           </div>
-          <div class="pl-16">
+          <div class="pl-12">
             <a href="#" class="flex hover:text-hover-orange">
-              <img src="./svg/line.svg">
+              <svg width="23" height="52" viewBox="0 0 23 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">
+                <path d="M1.3006 50.0343L20.7153 1.96576" stroke-width="2" stroke-linecap="square"/>
+                </svg>
               <span class="inline-block ml-2 mt-1">JEEP</br>ACCESSORIES</span>
             </a>
           </div>
         </div>
-        <div id="search-container" class="flex-grow text-right">
+        <div id="search-container" class="hidden lg:block flex-grow text-right lg:mr-6">
           <img id="search-icon" src="./svg/search.svg" alt="search icon">
           <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6" type="text"
             placeholder="Search entire store here...">
         </div>
-        <div class="ml-8 font-main">
-          <button class="flex justify-between items-center w-36 h-12 px-6 py-4 text-white bg-cart-btn">
-            <img src="./svg/shopping-cart.svg">
-            <span>My Cart</span>
-            <img src="./svg/shape.svg">
+        <div class="flex font-main mr-4">
+          <button class="w-10 h-10 mr-2 bg-top-bar lg:hidden">
+            <svg class="mx-auto" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.1203 10.9072L12.9828 8.73359C13.1999 8.0795 13.3294 7.38923 13.3294 6.66468C13.3294 2.99054 10.3388 0 6.66468 0C2.99054 0 0 2.99054 0 6.66468C0 10.3388 2.99054 13.3294 6.66468 13.3294C7.38923 13.3294 8.0814 13.1989 8.73359 12.9828L11.0158 15.2545C11.588 15.7363 12.2992 16 13.019 16C14.6633 16 16 14.6633 16 13.019C16 12.2192 15.6877 11.469 15.1203 10.9072ZM11.4061 9.8504L13.7788 12.2602C13.9739 12.4534 14.0949 12.7229 14.0949 13.019C14.0949 13.614 13.6121 14.0958 13.018 14.0958C12.721 14.0958 12.4525 13.9749 12.2411 13.7978L9.84945 11.4071C10.4645 10.992 10.9929 10.4636 11.4061 9.8504ZM6.66468 1.9042C4.03975 1.9042 1.9042 4.03975 1.9042 6.66468C1.9042 9.28962 4.03975 11.4252 6.66468 11.4252C9.28962 11.4252 11.4252 9.28962 11.4252 6.66468C11.4252 4.03975 9.28962 1.9042 6.66468 1.9042Z"
+                fill="#FFFFFF" />
+            </svg>
           </button>
-          <span id="cart-quantity"
-            class="w-6 h-6 rounded-full bg-shipping text-center font-top-bar-1 text-cart-quant text-xs">2</span>
+          <div id="cart-container">
+            <span id="cart-quantity"
+              class="w-6 h-6 rounded-full bg-shipping text-center font-top-bar-1 text-cart-quant text-xs">2</span>
+            <button class="flex justify-between items-center w-10 lg:w-36 h-10 lg:h-12 lg:px-6 lg:py-4 text-white bg-cart-btn">
+              <img class="mx-auto" src="./svg/shopping-cart.svg">
+              <span class="hidden lg:block">My Cart</span>
+              <img class="hidden lg:block" src="./svg/shape.svg">
+            </button>
+          </div>
         </div>
       </navbar>
     </div>
   </header>
 
   <main class="container mx-auto font-main">
-    <section id="shopping-cart-title" class="mt-10 mb-10">
-      <h1 class="text-main-heading font-normal">SHOPPING CART</h1>
+    <section id="shopping-cart-title" class="pl-4 mt-8 mb-8 lg:pl-0 lg:mt-10 lg:mb-10">
+      <h1 class="text-1.375 lg:text-main-heading font-normal">SHOPPING CART</h1>
     </section>
-    <div class="container flex">
+    <div class="container flex flex-col-reverse lg:flex-row">
       <div class="flex-grow">
-        <div class="pb-4 flex justify-between font-top-bar-1 font-bold text-sm">
+        <!-- <div class="pb-4 flex justify-between font-top-bar-1 font-bold text-sm">
           <span>Item</span>
           <span class="flex-grow text-end pr-10">Qty</span>
           <span class="pr-16">SUBTOTAL</span>
-        </div>
+        </div> -->
         <section id="shopping-cart-body">
-          <div class="flex justify-between mt-6">
-            <img src="./svg/cart-item.svg" alt="Cart item image">
-            <div class="flex flex-col content-between">
-              <p class="w-72 text-lg leading-snug flex-grow">FLIP TOPtm COMPLETE REPLACAMENT SOFT TOP,JEEP 1976-1995
-                CJ-7/WRANGLER,NO DOORS
-                INCLUDED,CLEAR SIDE AND
-                REAR WINDOWS</p>
-              <div class="font-top-bar-1 text-sm leading-6 pb-2.5">
-                <span class="font-bold">Color:</span>
-                <span> Black Denim</span>
+          <div class="flex flex-col lg:flex-row justify-between pt-6 lg:mt-6 lg:pt-0">
+            <div class="flex justify-between px-6">
+              <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
+              <div class="flex flex-col content-between">
+                <p class="text-1rem lg:text-lg w-36 lg:w-72 lg:leading-snug lg:flex-grow">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                <div class="font-top-bar-1 text-sm leading-6 pb-2.5 pt-4 lg:pt-0">
+                  <span class="font-bold">Color:</span>
+                  <span> Black Denim</span>
+                </div>
               </div>
             </div>
-            <div class="w-12 h-12 border-2 border-solid text-center pt-2">
-              <span>1</span>
+            <div class="flex flex-row justify-between mr-6 ml-6 font-top-bar-1 text-xs lg:flex-grow lg:justify-around lg:content-start">
+              <div>
+                <div class="py-4 text-center  font-bold text-xs">
+                  <span>Qty</span>
+                </div>
+                <div class="w-12 h-12 border-2 border-custom text-center pt-3">
+                  <span>1</span>
+                </div>
+              </div>
+              <div>
+                <div class="py-4 font-bold" >
+                  <span>SUBTOTAL</span>
+                </div>
+                <div class="font-bold text-end pt-3">
+                  <span>$150.00</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span>$150.00</span>
-            </div>
-            <div class="flex justify-between  w-12">
-              <span><img src="./svg/edit-icon.svg" alt="edit icon"></span>
-              <span><img src="./svg/remove-icon.svg" alt="remove-icon"></span>
-            </div>
+            <div class="flex lg:block justify-end py-4 lg:py-0 mr-6 lg:mr-0">
+              <div class="flex justify-between w-12">
+                <span><img src="./svg/edit-icon.svg" alt="edit icon"></span>
+                <span><img src="./svg/remove-icon.svg" alt="remove-icon"></span>
+              </div>
+            </div>           
           </div>
         </section>
 
         <section id="shopping-cart-body">
-          <div class="flex justify-between mt-6">
-            <img src="./svg/cart-item.svg" alt="Cart item image">
-            <div class="flex flex-col content-between">
-              <p class="w-72 text-lg leading-snug flex-grow">FLIP TOPtm COMPLETE REPLACAMENT SOFT TOP,JEEP 1976-1995
-                CJ-7/WRANGLER,NO DOORS
-                INCLUDED,CLEAR SIDE AND
-                REAR WINDOWS</p>
-              <div class="font-top-bar-1 text-sm leading-6 pb-2.5">
-                <span class="font-bold">Color:</span>
-                <span> Black Denim</span>
+          <div class="flex flex-col lg:flex-row justify-between pt-6 lg:mt-6 lg:pt-0">
+            <div class="flex justify-between px-6">
+              <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
+              <div class="flex flex-col content-between">
+                <p class="text-1rem lg:text-lg w-36 lg:w-72 lg:leading-snug lg:flex-grow">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
+                <div class="font-top-bar-1 text-sm leading-6 pb-2.5 pt-4 lg:pt-0">
+                  <span class="font-bold">Color:</span>
+                  <span> Black Denim</span>
+                </div>
               </div>
             </div>
-            <div class="w-12 h-12 border-2 border-solid text-center pt-2">
-              <span>1</span>
+            <div class="flex flex-row justify-between mr-6 ml-6 font-top-bar-1 text-xs lg:flex-grow lg:justify-around">
+              <div class="lg:mb-12">
+                <div class="py-4 text-center  font-bold text-xs lg:hidden">
+                  <span>Qty</span>
+                </div>
+                <div class="w-12 h-12 border-2 border-custom text-center pt-3">
+                  <span>1</span>
+                </div>
+              </div>
+              <div>
+                <div class="py-4 font-bold lg:hidden">
+                  <span>SUBTOTAL</span>
+                </div>
+                <div class="font-bold text-end pt-3">
+                  <span>$150.00</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <span>$150.00</span>
-            </div>
-            <div class="flex justify-between  w-12">
-              <span><img src="./svg/edit-icon.svg" alt="edit icon"></span>
-              <span><img src="./svg/remove-icon.svg" alt="remove-icon"></span>
-            </div>
+            <div class="flex lg:block justify-end py-4 lg:py-0 mr-6 lg:mr-0">
+              <div class="flex justify-between w-12">
+                <span><img src="./svg/edit-icon.svg" alt="edit icon"></span>
+                <span><img src="./svg/remove-icon.svg" alt="remove-icon"></span>
+              </div>
+            </div>           
           </div>
         </section>
 
-        <section id="shopping-cart-update" class="flex justify-between mt-16 mb-16">
-          <div class="flex border-2 border-solid h-12 w-18.375">
-            <input class="w-75 h-full font-top-bar-1 pl-4" type="text" placeholder="Enter Discount Code">
-            <button class="w-full h-full border-l-2 border-l-solid">APPLY</button>
+        <section id="shopping-cart-update" class="flex flex-col-reverse lg:flex-row justify-between my-16 mx-2 lg:mx-0">
+          <div class="flex border-2 border-custom h-10 lg:h-12 w-full lg:w-18.375 mt-4 lg:mt-0">
+            <input class="w-full lg:w-75 h-full font-top-bar-1 pl-4" type="text" placeholder="Enter Discount Code">
+            <button class="w-20 lg:w-full h-full border-l-2 border-l-custom">APPLY</button>
           </div>
-          <div class="h-12 w-18.375 text-center bg-top-bar">
-            <button type="button" class="w-full h-full font-main text-top-bar-text text-lg">UPDATE SHOPPING CART</button>
+          <div class="h-12 w-full lg:w-18.375 text-center bg-top-bar">
+            <button type="button" class="w-full h-full font-main text-top-bar-text text-lg">UPDATE SHOPPING
+              CART</button>
           </div>
         </section>
       </div>
 
-      <div class="ml-12 mb-12">
+      <div class="mb-12 lg:ml-12">
         <section id="shopping-cart-summary">
-          <h2 class="text-summary pb-4">SUMMARY</h2>
+          <h2 class="hidden lg:block text-summary pb-4">SUMMARY</h2>
           <form id="orderForm">
             <div id="shippingHeading" class="m-px">
-              <button id="toggleShipping" class="w-72 flex justify-between px-6 py-4 bg-shipping text-black">
+              <button id="toggleShipping" class="w-full lg:w-72 flex justify-between px-6 py-4 bg-shipping text-black">
                 <span id="shippingCaption">ESTIMATE SHIPPING AND TAX</span>
                 <img id="dropdownIcon" src="./svg/open-dropdown.svg" alt="button for estimate shipping">
               </button>
             </div>
-            <div id="shippingDiv" class="container-closed">
-            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
-              <label for="country">Country</label>
-              <div class="dropdown">
-                <input type="text" id="country" class="w-72 px-2 py-2 border-2 border-solid" name="country"
-                  placeholder="Select Country" readonly>
-                <div class="dropdown-content">
-                  <div>Country 1</div>
-                  <div>Country 2</div>
-                  <div>Country 3</div>
+            <div id="shippingDiv" class="container-closed px-6">
+              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
+                <label for="country">Country</label>
+                <div class="dropdown">
+                  <input type="text" id="country" class="w-72 px-2 py-2 border-2 border-solid" name="country"
+                    placeholder="Select Country" readonly>
+                  <div class="dropdown-content">
+                    <div>Country 1</div>
+                    <div>Country 2</div>
+                    <div>Country 3</div>
+                  </div>
                 </div>
               </div>
+              <br>
+              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
+                <label for="state">State:</label>
+                <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state">
+              </div>
+              <br>
+              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
+                <label for="zip">Zip Code:</label>
+                <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip">
+              </div>
+              <br>
+              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6 mt-6 mb-8">
+                <label>Flat Rate</label>
+                <label class="pl-4">
+                  <input type="radio" name="shipping" value="flat_rate"><span class="pl-4">Fixed</span><span
+                    class="text-xs"> ($5.00)</span>
+                </label>
+              </div>
             </div>
-            <br>
-            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
-              <label for="state">State:</label>
-              <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state">
-            </div>
-            <br>
-            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
-              <label for="zip">Zip Code:</label>
-              <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip">
-            </div>
-            <br>
-            <div class="flex flex-col h-12 w-72 font-top-bar-1 font-bold text-sm leading-6 mt-6 mb-8">
-              <label>Flat Rate</label>
-              <label class="pl-4">
-                <input type="radio" name="shipping" value="flat_rate"><span class="pl-4">Fixed</span><span
-                  class="text-xs"> ($5.00)</span>
-              </label>
-            </div>
-          </div>
             <div>
-              <div class="flex flex-col px-4 py-2 mx-auto bg-shipping">
+              <div class="flex flex-col px-6 lg:px-4 py-2 mx-auto bg-shipping">
                 <div class="flex justify-between pb-2">
                   <span class="font-main text-lg leading-6">Subtotal</span>
                   <span class="font-top-bar-1 text-sm leading-6">$100.00</span>
                 </div>
                 <div class="flex justify-between">
-                  <span class="font-main text-lg leading-6">Shipping</span>
+                  <div class="flex">
+                    <span class="font-main text-lg leading-6">Shipping</span>
+                    <span class="pl-2 font-top-bar-1">(Flat Rate - Fixed)</span>
+                  </div>              
                   <span class="font-top-bar-1 text-sm leading-6">$100.00</span>
                 </div>
               </div>
-              <div class="bg-shipping m-px px-4 py-2 mx-auto">
-                <div class="flex justify-between pt-2">
+              <div class="bg-shipping m-px py-2 lg:px-4 mx-auto">
+                <div class="flex justify-between px-6 lg:px-0 pt-2">
                   <span class="text-2xl leading-6">Order Total</span>
                   <span class="font-top-bar-1 font-bold">$110.00</span>
                 </div>
-                <div class="flex flex-col w-full pt-8">
+                <div class="flex flex-col w-full pt-4 lg:pt-8 px-2 lg:px-0">
                   <button type="submit" class="w-full h-12 bg-cart-btn font-main text-2xl leading-6 text-white">PROCEED
                     TO CHECKOUT</button>
-                  <a class="w-full pt-6 pb-4 font-top-bar-1 text-extra-small leading-4 font-bold text-center">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                  <a class="w-full pt-6 pb-4 font-top-bar-1 text-extra-small leading-4 font-bold text-center underline">CHECKOUT
+                    WITH MULTIPLE ADDRESSES</a>
                 </div>
               </div>
             </div>
@@ -223,25 +274,34 @@
     </div>
   </main>
 
-  <footer class="h-40 bg-top-bar text-top-bar-text bottom-0">
-    <div class="container mx-auto px-60 pt-12">
+  <footer class="bg-top-bar text-top-bar-text h-80 lg:h-40">
+    <div class="container mx-auto pt-2 lg:pt-12 lg:px-60">
+      <p class="text-center pt-4 pb-2 text-xs lg:hidden">© Jeep is a registered trademark of FCA US LLC.</p>
       <navbar>
-        <ul class="flex justify-between items-center h-footer-nav font-top-bar-1 text-extra-small font-bold">
-          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">ABOUT US</a></li>
-          <div class="text-3xl leading-6 font-extralight">/</div>
-          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">CONTACT US</a></li>
-          <div class="text-3xl leading-6 font-extralight">/</div>
-          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">SEARCH TERMS</a></li>
-          <div class="text-3xl leading-6 font-extralight">/</div>
-          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">PRIVACY AND COOKIE POLICY</a></li>
-          <div class="text-3xl leading-6 font-extralight">/</div>
-          <li><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">INSTALLATION VIDEOS</a></li>
+        <ul class="flex flex-col lg:flex-row justify-between items-center font-top-bar-1 text-11px lg:text-extra-small font-bold lg:h-footer-nav">
+          <li class="py-3 lg:py-0"><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">ABOUT US</a></li>
+          <div class="hidden text-3xl leading-6 font-extralight lg:block">/</div>
+          <li class="py-3 lg:py-0"><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">CONTACT US</a>
+          </li>
+          <div class="hidden text-3xl leading-6 font-extralight lg:block">/</div>
+          <li class="py-3 lg:py-0"><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">SEARCH TERMS</a>
+          </li>
+          <div class="hidden text-3xl leading-6 font-extralight lg:block">/</div>
+          <li class="py-3 lg:py-0"><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">PRIVACY AND COOKIE
+              POLICY</a></li>
+          <div class="hidden text-3xl leading-6 font-extralight lg:block">/</div>
+          <li class="py-3 lg:py-0"><a class="inline-block h-3.5 border-b border-solid border-b-gray-100 border-opacity-25">INSTALLATION
+              VIDEOS</a></li>
         </ul>
       </navbar>
-      <div class="flex justify-center px-20 text-center mt-6 w-47 text-sm leading-6">
-        <span>Contact our Customer Service</span>
-        <img class="px-2 mt-0.5 h-4" src="./svg/phone-icon.svg" alt="phone icon">
-        <span class="font-bold">(800) 333-3567</span>
+      <div class="flex flex-col lg:flex-row lg:justify-center lg:px-20 text-center mt-2 lg:mt-6 lg:w-47 text-xs lg:text-sm leading-6">
+        <div>
+          <span>Contact our Customer Service</span>
+        </div>
+        <div class="flex justify-center te">
+          <img class="px-2 mt-0.5 h-4" src="./svg/phone-icon.svg" alt="phone icon">
+          <span class="font-bold">(800) 333-3567</span>
+        </div>      
       </div>
     </div>
   </footer>

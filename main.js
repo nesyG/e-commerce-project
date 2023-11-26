@@ -1,4 +1,4 @@
-import './src/assets/tailwind.css'
+import './tailwind.css'
 
 document.getElementById('toggleShipping').addEventListener('click', function (event) {
     event.preventDefault();

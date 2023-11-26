@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link href="/dist/main.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-commerce project</title>
 </head>
@@ -11,7 +10,7 @@
 <body>
   <header class="lg:shadow-md">
     <div class="bg-top-bar">
-      <div class="container mx-auto flex justify-between items-center h-8 lg:h-12 text-top-bar-text">
+      <div class="container mx-auto flex justify-between items-center h-8 lg:h-12 text-top-bar-text lg:w-4/6">
         <navbar class="flex-grow font-top-bar-1">
           <ul class="flex">
             <li class="flex w-47 text-sm leading-6">
@@ -44,7 +43,7 @@
       </div>
     </div>
 
-    <div class="container h-header-mob lg:flex lg:justify-between lg:mx-auto lg:h-24">
+    <div class="container h-header-mob lg:flex lg:justify-between lg:mx-auto lg:h-24 lg:w-4/6">
       <navbar class="flex items-center h-full w-full">
         <div class="ml-4 lg:hidden">
           <button class="w-10 h-10 rounded-full bg-shipping"><img class="mx-auto" src="./svg/mobile-menu.svg"></button>
@@ -72,7 +71,7 @@
         </div>
         <div id="search-container" class="hidden lg:block flex-grow text-right lg:mr-6">
           <img id="search-icon" src="./svg/search.svg" alt="search icon">
-          <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6" type="text"
+          <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6 focus:outline-none" type="text"
             placeholder="Search entire store here...">
         </div>
         <div class="flex font-main mr-4 lg:mr-0">
@@ -98,7 +97,7 @@
     </div>
   </header>
 
-  <main class="container mx-auto font-main">
+  <main class="container mx-auto font-main lg:w-4/6">
     <section id="shopping-cart-title" class="pl-4 mt-8 mb-8 lg:pl-0 lg:mt-10 lg:mb-10">
       <h1 class="text-1.375 lg:text-main-heading font-normal">SHOPPING CART</h1>
     </section>
@@ -151,7 +150,9 @@
         <section id="shopping-cart-body">
           <div class="flex flex-col lg:flex-row justify-between pt-6 lg:mt-6 lg:pt-0">
             <div class="flex justify-between px-6 lg:px-0">
-              <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
+              <div class="flex flex-col ">
+                <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
+              </div>   
               <div class="flex flex-col content-between lg:ml-8">
                 <p class="text-1rem lg:text-lg w-36 lg:w-72 lg:leading-snug lg:flex-grow">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
                 <div class="font-top-bar-1 text-sm leading-6 pb-2.5 pt-4 lg:pt-0">
@@ -189,7 +190,7 @@
 
         <section id="shopping-cart-update" class="flex flex-col-reverse lg:flex-row justify-between my-16 mx-2 lg:mx-0">
           <div class="flex border-2 border-custom h-10 lg:h-12 w-full lg:w-18.375 mt-4 lg:mt-0">
-            <input class="w-full lg:w-75 h-full font-top-bar-1 pl-4 lg:text-0.875" type="text" placeholder="Enter Discount Code">
+            <input class="w-full lg:w-75 h-full font-top-bar-1 pl-4 lg:text-0.875 focus:outline-none" type="text" placeholder="Enter Discount Code">
             <button class="w-20 lg:w-24 h-full border-l-2 border-l-custom">APPLY</button>
           </div>
           <div class="h-12 w-full lg:w-18.375 text-center bg-top-bar">
@@ -275,7 +276,7 @@
   </main>
 
   <footer class="bg-top-bar text-top-bar-text h-80 lg:h-40">
-    <div class="container mx-auto pt-2 lg:pt-12 lg:px-80">
+    <div class="container mx-auto pt-2 lg:pt-12 lg:px-80 lg:w-4/6">
       <p class="text-center pt-4 pb-2 text-xs lg:hidden">© Jeep is a registered trademark of FCA US LLC.</p>
       <navbar>
         <ul class="flex flex-col lg:flex-row justify-between items-center font-top-bar-1 text-11px lg:text-extra-small font-bold lg:h-footer-nav">

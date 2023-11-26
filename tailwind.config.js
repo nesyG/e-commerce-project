@@ -14,6 +14,7 @@ export default {
         'top-bar-text': '#F5F5F5',
         'hover-orange': '#E0872C',
         'cart-quant': '#008421',
+        'hover-a': '#919191'
       },
       fontFamily: {
      'main':['Bebas Neue'],

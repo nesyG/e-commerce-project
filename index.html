@@ -75,7 +75,7 @@
           <input class="border-2 border-gray-700 w-80 h-12 pl-2 font-top-bar-1 text-sm leading-6" type="text"
             placeholder="Search entire store here...">
         </div>
-        <div class="flex font-main mr-4">
+        <div class="flex font-main mr-4 lg:mr-0">
           <button class="w-10 h-10 mr-2 bg-top-bar lg:hidden">
             <svg class="mx-auto" width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -104,16 +104,16 @@
     </section>
     <div class="container flex flex-col-reverse lg:flex-row">
       <div class="flex-grow">
-        <!-- <div class="pb-4 flex justify-between font-top-bar-1 font-bold text-sm">
-          <span>Item</span>
-          <span class="flex-grow text-end pr-10">Qty</span>
-          <span class="pr-16">SUBTOTAL</span>
-        </div> -->
+
         <section id="shopping-cart-body">
           <div class="flex flex-col lg:flex-row justify-between pt-6 lg:mt-6 lg:pt-0">
-            <div class="flex justify-between px-6">
-              <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
-              <div class="flex flex-col content-between">
+            <div class="flex justify-between px-6 lg:px-0">
+              <div class="flex flex-col lg:mt-[-30px]">
+                <span class="hidden lg:block font-top-bar-1 font-bold text-xs">Item</span>
+                <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
+              </div>
+             
+              <div class="flex flex-col content-between lg:ml-8">
                 <p class="text-1rem lg:text-lg w-36 lg:w-72 lg:leading-snug lg:flex-grow">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
                 <div class="font-top-bar-1 text-sm leading-6 pb-2.5 pt-4 lg:pt-0">
                   <span class="font-bold">Color:</span>
@@ -121,7 +121,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-row justify-between mr-6 ml-6 font-top-bar-1 text-xs lg:flex-grow lg:justify-around lg:content-start">
+            <div class="flex flex-row justify-between mr-6 ml-6 font-top-bar-1 text-xs lg:flex-grow lg:justify-around lg:content-start lg:mt-[-47px]">
               <div>
                 <div class="py-4 text-center  font-bold text-xs">
                   <span>Qty</span>
@@ -134,12 +134,12 @@
                 <div class="py-4 font-bold" >
                   <span>SUBTOTAL</span>
                 </div>
-                <div class="font-bold text-end pt-3">
+                <div class="font-bold text-end pt-3 lg:text-0.875">
                   <span>$150.00</span>
                 </div>
               </div>
             </div>
-            <div class="flex lg:block justify-end py-4 lg:py-0 mr-6 lg:mr-0">
+            <div class="flex lg:block justify-end py-4 lg:py-0 lg:pt-3 mr-6 lg:mr-0">
               <div class="flex justify-between w-12">
                 <span><img src="./svg/edit-icon.svg" alt="edit icon"></span>
                 <span><img src="./svg/remove-icon.svg" alt="remove-icon"></span>
@@ -150,9 +150,9 @@
 
         <section id="shopping-cart-body">
           <div class="flex flex-col lg:flex-row justify-between pt-6 lg:mt-6 lg:pt-0">
-            <div class="flex justify-between px-6">
+            <div class="flex justify-between px-6 lg:px-0">
               <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="./svg/cart-item.svg" alt="Cart item image">
-              <div class="flex flex-col content-between">
+              <div class="flex flex-col content-between lg:ml-8">
                 <p class="text-1rem lg:text-lg w-36 lg:w-72 lg:leading-snug lg:flex-grow">Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</p>
                 <div class="font-top-bar-1 text-sm leading-6 pb-2.5 pt-4 lg:pt-0">
                   <span class="font-bold">Color:</span>
@@ -173,12 +173,12 @@
                 <div class="py-4 font-bold lg:hidden">
                   <span>SUBTOTAL</span>
                 </div>
-                <div class="font-bold text-end pt-3">
+                <div class="font-bold text-end pt-3 lg:text-0.875">
                   <span>$150.00</span>
                 </div>
               </div>
             </div>
-            <div class="flex lg:block justify-end py-4 lg:py-0 mr-6 lg:mr-0">
+            <div class="flex lg:block justify-end py-4 lg:py-0 lg:pt-3 mr-6 lg:mr-0">
               <div class="flex justify-between w-12">
                 <span><img src="./svg/edit-icon.svg" alt="edit icon"></span>
                 <span><img src="./svg/remove-icon.svg" alt="remove-icon"></span>
@@ -189,8 +189,8 @@
 
         <section id="shopping-cart-update" class="flex flex-col-reverse lg:flex-row justify-between my-16 mx-2 lg:mx-0">
           <div class="flex border-2 border-custom h-10 lg:h-12 w-full lg:w-18.375 mt-4 lg:mt-0">
-            <input class="w-full lg:w-75 h-full font-top-bar-1 pl-4" type="text" placeholder="Enter Discount Code">
-            <button class="w-20 lg:w-full h-full border-l-2 border-l-custom">APPLY</button>
+            <input class="w-full lg:w-75 h-full font-top-bar-1 pl-4 lg:text-0.875" type="text" placeholder="Enter Discount Code">
+            <button class="w-20 lg:w-24 h-full border-l-2 border-l-custom">APPLY</button>
           </div>
           <div class="h-12 w-full lg:w-18.375 text-center bg-top-bar">
             <button type="button" class="w-full h-full font-main text-top-bar-text text-lg">UPDATE SHOPPING
@@ -199,7 +199,7 @@
         </section>
       </div>
 
-      <div class="mb-12 lg:ml-12">
+      <div class="mb-14 lg:ml-12 lg:mt-[-37px]">
         <section id="shopping-cart-summary">
           <h2 class="hidden lg:block text-summary pb-4">SUMMARY</h2>
           <form id="orderForm">
@@ -209,7 +209,7 @@
                 <img id="dropdownIcon" src="./svg/open-dropdown.svg" alt="button for estimate shipping">
               </button>
             </div>
-            <div id="shippingDiv" class="container-closed px-6">
+            <div id="shippingDiv" class="container-closed px-6 lg:px-0 mt-6">
               <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
                 <label for="country">Country</label>
                 <div class="dropdown">
@@ -223,12 +223,12 @@
                 </div>
               </div>
               <br>
-              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
+              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6 lg:mt-4">
                 <label for="state">State:</label>
                 <input type="text" id="state" class="w-72 px-2 py-2 border-2 border-solid" name="state">
               </div>
               <br>
-              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6">
+              <div class="flex flex-col px-6 lg:px-0 h-12 w-72 font-top-bar-1 font-bold text-sm leading-6 lg:mt-4">
                 <label for="zip">Zip Code:</label>
                 <input type="text" id="zip" class="w-72 px-2 py-2 border-2 border-solid" name="zip">
               </div>
@@ -245,20 +245,20 @@
               <div class="flex flex-col px-6 lg:px-4 py-2 mx-auto bg-shipping">
                 <div class="flex justify-between pb-2">
                   <span class="font-main text-lg leading-6">Subtotal</span>
-                  <span class="font-top-bar-1 text-sm leading-6">$100.00</span>
+                  <span class="font-top-bar-1 text-sm leading-6">$150.00</span>
                 </div>
                 <div class="flex justify-between">
                   <div class="flex">
                     <span class="font-main text-lg leading-6">Shipping</span>
                     <span class="pl-2 font-top-bar-1">(Flat Rate - Fixed)</span>
                   </div>              
-                  <span class="font-top-bar-1 text-sm leading-6">$100.00</span>
+                  <span class="font-top-bar-1 text-sm leading-6">$5.00</span>
                 </div>
               </div>
               <div class="bg-shipping m-px py-2 lg:px-4 mx-auto">
                 <div class="flex justify-between px-6 lg:px-0 pt-2">
                   <span class="text-2xl leading-6">Order Total</span>
-                  <span class="font-top-bar-1 font-bold">$110.00</span>
+                  <span class="font-top-bar-1 font-bold">$105.00</span>
                 </div>
                 <div class="flex flex-col w-full pt-4 lg:pt-8 px-2 lg:px-0">
                   <button type="submit" class="w-full h-12 bg-cart-btn font-main text-2xl leading-6 text-white">PROCEED

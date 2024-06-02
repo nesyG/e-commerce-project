@@ -41,6 +41,9 @@ export default {
       },
       borderColor: {
         'custom': '#2F2F2F'
+       },
+      spacing: {
+        '12': '3rem'
        }
     }
   },

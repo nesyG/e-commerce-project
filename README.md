@@ -4,7 +4,7 @@ This is a simple e-commerce layout built with Vanilla JavaScript, Tailwind CSS, 
 
 ## Live Demo
 
-Check out the live demo at: https://e-commerce-project-gules.vercel.app/
+Check out the live demo at: https://e-commerce-project-vrow.vercel.app/
 
 ## Features
 

@@ -5,7 +5,6 @@ document.getElementById('toggleShipping').addEventListener('click', function (ev
     let shippingDiv = document.getElementById('shippingDiv');
     let shippingSummary = document.getElementById('toggleShipping');
     let imgContainer = document.getElementById('dropdownIcon');
-    let shippingContainer = document.getElementById('shippingHeading');
 
     if (shippingDiv.classList.contains('max-h-0')) {
         shippingDiv.classList.remove('max-h-0', 'slide-up');
@@ -71,11 +70,11 @@ function renderCartItems(items) {
         itemSection.innerHTML = `    
             <div class="flex justify-between px-6 lg:px-0">
               <div class="">
-                <img class="w-36 mb-12 lg:w-auto lg:mb-0" src="${item.imageSrc}" alt="Cart item image">
+                <img class="mb-12 lg:w-auto lg:mb-0" src="${item.imageSrc}" style="width: 128px; height: 96px;" alt="Cart item image">
               </div>
             </div>
           <div class="col-span-2 flex flex-col content-between lg:ml-8" style="margin-left:2rem">
-            <p class="text-1rem lg:text-lg w-36 lg:w-72 lg:leading-snug lg:flex-grow">${item.description}</p>
+            <p class="text-1rem lg:text-lg w-full lg:leading-snug lg:flex-grow">${item.description}</p>
             <div class="font-top-bar-1 text-sm leading-6 pb-2.5 pt-4 lg:pt-0">
               <span class="font-bold">Color:</span>
               <span> ${item.color}</span>

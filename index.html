@@ -43,15 +43,15 @@
       </div>
     </div>
 
-    <div class="container h-header-mob lg:flex lg:justify-between lg:mx-auto lg:h-24 lg:w-4/6">
-      <navbar class="flex items-center h-full w-full">
+    <div class="container h-header-mob lg:flex lg:justify-between mx-auto lg:h-24 lg:w-4/6">
+      <navbar class="sm:mt-6 md:mt-6 lg:mt-0 flex items-center h-full w-full">
         <div class="ml-4 lg:hidden">
           <button class="w-10 h-10 rounded-full bg-shipping"><img class="mx-auto" src="./svg/mobile-menu.svg"></button>
         </div>
-        <div class="flex-grow pl-8 lg:pl-0 lg:flex-grow-0">
+        <div class="flex-grow flex-shrink-0 pl-8 lg:pl-0 lg:flex-grow-0">
           <a href="#"><img class="w-32 h-24" src="./svg/shopicon.png" alt="business logo"></a>
         </div>
-        <div id="productNav" class="hidden lg:flex flex justify-center flex-grow font-main text-product-nav">
+        <div id="productNav" class="hidden lg:flex flex justify-center flex-grow font-main text-product-nav mr-4">
           <div class="group">
             <a href="#" class="flex">
               <svg width="23" height="52" viewBox="0 0 23 52" fill="none" xmlns="http://www.w3.org/2000/svg" class="stroke-current">
@@ -120,14 +120,16 @@
             <input class="w-full lg:w-75 h-full font-top-bar-1 pl-4 lg:text-0.875 focus:outline-none" type="text" placeholder="Enter Discount Code">
             <button class="w-20 lg:w-24 h-full border-l-2 border-l-custom">APPLY</button>
           </div>
-          <div class="h-12 w-full lg:w-18.375 text-center bg-top-bar">
+          <div class="h-12 w-full lg:w-18.375 lg:ml-6 text-center bg-top-bar">
             <button type="button" class="w-full h-full font-main text-top-bar-text text-lg">UPDATE SHOPPING
               CART</button>
           </div>
         </section>
       </div>
 
-      <div class="mb-14 lg:ml-12 lg:mt-[-37px]">
+      <div class="w-1/8"></div>
+
+      <div class="mb-14 lg:ml-12 lg:mt-[-37px] max-w-full">
         <section id="shopping-cart-summary">
           <h2 class="hidden lg:block text-summary pb-4">SUMMARY</h2>
           <form id="orderForm">
